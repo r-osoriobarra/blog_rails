@@ -1,0 +1,14 @@
+<%# Show errors %>
+<% if @post.errors.any? %>
+    <h2>
+        <%= pluralize(@post.errors.count, "error") %>
+        prohibited this post being saved:
+    </h2>
+    <ul>
+        <% @post.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+        <% end %>
+    </ul>
+<% else %>
+    <h1>Your awesome post has been created successfully!</h1>
+<% end %>
