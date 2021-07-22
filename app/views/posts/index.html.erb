@@ -10,8 +10,8 @@
     <input type="url" name="image_url"><br>
     
     <label for="content">Post</label><br>
-    <input type="text" name="content"><br><br>
-    
+    <textarea type="text" name="content"></textarea><br>
+    <p><strong>Note:</strong> The word 'Piñera' will be delete from the text</p>
     <input type="submit" value="Submit">
 </form>    
 
@@ -20,6 +20,7 @@
 
 <table>
     <tr>
+        <th>#</th>
         <th>Title</th>
         <th>Date of entry</th>
         <th>Image</th>
@@ -28,6 +29,7 @@
     
     <% @posts.each do |post|%>
         <tr>
+            <td><%= post.id %></td>
             <td><%= post.title %></td>
             <td><%= post.created_at %></td>
             <td><%= post.image_url %></td>
