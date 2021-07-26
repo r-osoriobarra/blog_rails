@@ -5,6 +5,6 @@ class Post < ApplicationRecord
 
     def censored_word
         word = 'Piñera'
-        self.content = self.content.remove(word)
+        self.content = self.content.gsub(word,'(censored)')
     end
 end

@@ -12,7 +12,7 @@
         
         <label for="content">Post</label><br>
         <textarea type="text" name="content"></textarea><br>
-        <p><strong>Note:</strong> The word 'Piñera' will be delete from the text</p>
+        <p><strong>Note:</strong> The word 'Piñera' will be delete from the post.</p>
         <input type="submit" value="Submit">
     </form>
 </div>
@@ -22,7 +22,7 @@
     <h2>Last Posts</h2>
     <table>
         <tr>
-            <th>#</th>
+            <th id="th_id">#</th>
             <th>Title</th>
             <th>Date of entry</th>
             <th>Image</th>
@@ -31,7 +31,7 @@
         
         <% @posts.each do |post|%>
             <tr>
-                <td><%= post.id %></td>
+                <td id="td_id"><%= post.id %></td>
                 <td><%= post.title %></td>
                 <td><%= post.created_at %></td>
                 <td><%= image_tag post.image_url, :size => "100x100" %></td>
