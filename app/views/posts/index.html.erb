@@ -1,8 +1,8 @@
 <%# Post Form %>
-<div class="form">
+<div>
     <h1>Leave us a Post!</h1>
     <form action="/posts/create" method ="POST" id="create_post">
-        <input type="hidden" name="authenticity_token" value="<% form_authenticity_token %>">
+        <%= token_tag %>
         
         <label for="title">Title</label><br>
         <input type="text" name="title"><br>
@@ -18,7 +18,7 @@
 </div>
 
 <%# Post Dashboard %>
-<div class="dashboard">
+<div>
     <h2>Last Posts</h2>
     <table>
         <tr>
