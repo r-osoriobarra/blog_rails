@@ -1,4 +1,4 @@
-# Desafío - Project Manager 20-07-21
+# Desafío - Blog 20-07-21
 
 Séptimo desafío del módulo "Desarrollo de aplicaciones web con Rails" @DesafíoLatam. El objetivo es realizar una aplicación utilizando los conceptos básicos de Rails, utilizando formularios html.
 
